@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrafityNEST - Layanan Pelanggan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="top-header">
+        <div class="auth-buttons">
+            <a href="masuk.html"><button class="btn btn-masuk">MASUK</button></a> 
+            <a href="daftar.html"><button class="btn btn-daftar">DAFTAR</button></a>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <span><img src="assets/Temujasa (1080 x 1080 piksel) (2).png" width="30">CrafityNEST</span>
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="katalog.html">Katalog</a></li>
+                <li class="nav-group">
+                    <a href="#">Layanan Pelanggan</a>
+                    <ul>
+                        <li><a href="dikirim.html">Dikirim</a></li>
+                        <li><a href="diproses.html">Diproses</a></li>
+                        <li><a href="selesai.html">Selesai</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <h1>Selamat Datang di Layanan Pelanggan CrafityNEST</h1>
+            <p class="tagline">tempat di mana kreativitas bertemu dengan keindahan</p>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="nama">Nama</label>
+                    <input type="text" id="nama" placeholder="masukkan nama kamu">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="masukkan email kamu">
+                </div>
+
+                <div class="form-group">
+                    <label>Kategori Keluhan</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox"> kerusakan barang</label>
+                        <label><input type="checkbox"> pelayanan buruk</label>
+                        <label><input type="checkbox"> jumlah item tidak sesuai</label>
+                        <label><input type="checkbox"> barang tidak sesuai</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="subjek">Subjek</label>
+                    <input type="text" id="subjek" placeholder="masukkan subjek keluhan kamu">
+                </div>
+
+                <div class="form-group">
+                    <label for="deskripsi">Deskripsi</label>
+                    <textarea id="deskripsi" placeholder="jelaskan secara detail keluhan kamu"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-kirim">Kirim</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
